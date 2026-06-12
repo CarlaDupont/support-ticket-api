@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: fr.carla.support.service.TicketServiceTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 3, Errors: 7, Skipped: 0, Time elapsed: 0.306 s <<< FAILURE! -- in fr.carla.support.service.TicketServiceTest
+fr.carla.support.service.TicketServiceTest.shouldCreateTicketWithOpenStatus -- Time elapsed: 0.202 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.createTicket(TicketService.java:21)
+	at fr.carla.support.service.TicketServiceTest.shouldCreateTicketWithOpenStatus(TicketServiceTest.java:57)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldCreateTicket -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.createTicket(TicketService.java:21)
+	at fr.carla.support.service.TicketServiceTest.shouldCreateTicket(TicketServiceTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldRejectStatusChangeWhenTicketIsResolved -- Time elapsed: 0.026 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <fr.carla.support.exception.TicketConflictException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at fr.carla.support.service.TicketServiceTest.shouldRejectStatusChangeWhenTicketIsResolved(TicketServiceTest.java:148)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.updateStatus(TicketService.java:33)
+	at fr.carla.support.service.TicketServiceTest.lambda$shouldRejectStatusChangeWhenTicketIsResolved$3(TicketServiceTest.java:150)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+fr.carla.support.service.TicketServiceTest.shouldAllowOpenToInProgress -- Time elapsed: 0.007 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.updateStatus(TicketService.java:33)
+	at fr.carla.support.service.TicketServiceTest.shouldAllowOpenToInProgress(TicketServiceTest.java:108)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldThrowWhenTicketDoesNotExist -- Time elapsed: 0.009 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <fr.carla.support.exception.TicketNotFoundException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at fr.carla.support.service.TicketServiceTest.shouldThrowWhenTicketDoesNotExist(TicketServiceTest.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.getTicketById(TicketService.java:25)
+	at fr.carla.support.service.TicketServiceTest.lambda$shouldThrowWhenTicketDoesNotExist$2(TicketServiceTest.java:82)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+fr.carla.support.service.TicketServiceTest.shouldAllowInProgressToResolved -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.updateStatus(TicketService.java:33)
+	at fr.carla.support.service.TicketServiceTest.shouldAllowInProgressToResolved(TicketServiceTest.java:136)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldFindExistingTicket -- Time elapsed: 0.004 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.getTicketById(TicketService.java:25)
+	at fr.carla.support.service.TicketServiceTest.shouldFindExistingTicket(TicketServiceTest.java:69)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldListAllTickets -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.getAllTickets(TicketService.java:29)
+	at fr.carla.support.service.TicketServiceTest.shouldListAllTickets(TicketServiceTest.java:94)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+fr.carla.support.service.TicketServiceTest.shouldRejectInvalidStatusTransition -- Time elapsed: 0.006 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Unexpected exception type thrown, expected: <fr.carla.support.exception.TicketConflictException> but was: <java.lang.UnsupportedOperationException>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:67)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)
+	at org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3115)
+	at fr.carla.support.service.TicketServiceTest.shouldRejectInvalidStatusTransition(TicketServiceTest.java:163)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.updateStatus(TicketService.java:33)
+	at fr.carla.support.service.TicketServiceTest.lambda$shouldRejectInvalidStatusTransition$4(TicketServiceTest.java:165)
+	at org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:53)
+	... 6 more
+
+fr.carla.support.service.TicketServiceTest.shouldAllowOpenToResolved -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.UnsupportedOperationException: Not implemented yet
+	at fr.carla.support.service.TicketService.updateStatus(TicketService.java:33)
+	at fr.carla.support.service.TicketServiceTest.shouldAllowOpenToResolved(TicketServiceTest.java:122)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
